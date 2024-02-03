@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url('https://img.freepik.com/free-vector/blurred-valentine-s-day-wallpaper_23-2148819570.jpg'); 
+                background-size: cover;
+                margin: 0; 
+            }
+
+            div {
+                text-align: center;
+                vertical-align: middle;
+                font-family: 'Arial; 
+            }
+
+            #no {
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Hey love, as Valentine's Day is approaching, I can't help but think about spending it with someone special. Your laughter, your company, and the way you make every moment better have made me realize that you're the one I want to share this day with. So, I have a question for you – will you be my Valentine date? </h1>
+            <button id="yesButton">Yes</button>
+            <button id="no">No</button>
+        </div>
+
+        <script>
+            document.getElementById("yesButton").addEventListener("click", function(){
+                alert("Yey! Your answer just made my day! I can't wait to see you this Valentine's Day and create some wonderful memories together. Let's make it a day filled with laughter, love, and joy. I've saved the date and I'm eagerly counting down the days until we can celebrate together. Prepare for an unforgettable Valentine's Day, my love dino<3!");
+            });
+
+            var b = document.getElementById("no") 
+            b.addEventListener("click", change);
+
+            function change() {
+                var i = Math.floor(Math.random()*1000) + 1;
+                var j = Math.floor(Math.random()*700) + 1;
+                b.style.left = i + "px";
+                b.style.top = j + "px";
+            }
+        </script>
+    </body>
+</html>
